@@ -14,9 +14,7 @@ public class StatsService{
 
 // Метод №2: средняя сумма продаж в месяц
     public long calculateAverageSum(long[] purchases){
-        long sum = 0;
-        for (long purchase : purchases){
-            sum += purchase; }
+        long sum = calculateSum(purchases);
         long month = 12;
         long average = sum / month;
         return average;
